@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victhor Alexandre </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="fade-in">
+        <div class="container">
+            <h1>Victhor Alexandre</h1>
+            <p>estudante da escola do futuro</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sobre -->
+    <section id="sobre" class="container fade-in">
+        <img src="foto de perfil.jpg" alt="Victhor Alexandre" class="perfil">
+        <h2>Sobre Mim</h2>
+        <p>Sou um estudante apaixonado por tecnologia e inovação. Tenho experiência com <strong>JavaScript</strong>, <strong>HTML</strong>, e <strong>CSS</strong>.  
+        </p>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="container fade-in">
+        <h2>Projetos em Desenvolvimento</h2>
+        <div class="projetos-grid">
+            <div class="projeto">
+                <h3>R.E.A.D</h3>
+                <p>Aplicativo web de gamificação para escolas.</p>
+                <a href="#" class="btn-secundario">Ver Projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>projeto de app de saude</h3>
+                <p>aplicativo de acompanhamento da saude pessoal e lembrete medicinal</p>
+                <a href="#" class="btn-secundario">Ver Projeto</a>
+            </div>
+            <div class="projeto">
+                <h3>Em andamento</h3>
+                <p>talvez havera algo aqui no futuro?</p>
+                <a href="#" class="btn-secundario">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container fade-in">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através dos canais abaixo:</p>
+        <ul class="contato-lista">
+            <li><a href="mailto:victhoralexandre58@gmail.com">📧 victhoralexandre58@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/victhor-alexandre/">💼 https://www.linkedin.com/in/victhor-alexandre/</a></li>
+            <li><a href="https://github.com/VicthorAlexandre/Portifolio">🐙 https://github.com/VicthorAlexandre/Portifolio</a></li>
+        </ul>
+    </section>
+
+    <footer class="fade-in">
+        <p>&copy; 2025 Victhor Alexandre — Desenvolvido com 💻 e I.A</p>
+    </footer>
+
+    <script>
+        // Animação suave ao rolar
+        const fadeEls = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('show');
+            });
+        }, { threshold: 0.2 });
+        fadeEls.forEach(el => observer.observe(el));
+    </script>
+</body>
+  <style>/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0f141a;
+    color: #e6e6e6;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(135deg, #1c2230, #0f141a);
+    border-bottom: 2px solid #00bcd4;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #9aa0a6;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* SOBRE */
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre h2 {
+    color: #00bcd4;
+    font-size: 2rem;
+    margin-top: 25px;
+}
+
+#sobre p {
+    max-width: 700px;
+    margin: 20px 0;
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #00bcd4;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+}
+
+/* BOTÕES */
+.btn, .btn-secundario {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    background-color: #00bcd4;
+    color: #0f141a;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+    transform: translateY(-2px);
+}
+
+.btn-secundario {
+    border: 2px solid #00bcd4;
+    color: #00bcd4;
+}
+
+.btn-secundario:hover {
+    background-color: #00bcd4;
+    color: #0f141a;
+    transform: translateY(-2px);
+}
+
+/* PROJETOS */
+#projetos {
+    background-color: #1c2230;
+    border-radius: 12px;
+    padding: 60px 0;
+
+}
+
+#projetos h2 {
+    color: #00bcd4;
+    margin-bottom: 40px;
+}
+
+.projetos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    gap: 30px;
+    text-align: center;
+}
+
+.projeto {
+    background-color: #0f141a;
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,188,212,0.3);
+}
+
+.projeto h3 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    color: #ccc;
+}
+
+/* CONTATO */
+#contato h2 {
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.contato-lista {
+    list-style: none;
+    line-height: 2;
+}
+
+.contato-lista a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contato-lista a:hover {
+    color: #fff;
+}
+
+/* RODAPÉ */
+footer {
+    background: #1c2230;
+    color: #aaa;
+    padding: 20px 0;
+    border-top: 2px solid #00bcd4;
+}
+
+/* ANIMAÇÕES */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .projetos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    .projeto {
+        width: 90%;
+        max-width: 350px;
+    }
+</style>
+</html>
