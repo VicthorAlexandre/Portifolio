@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styleps.css">
+</head>
+<body>
+    <div class="tudo">
+        <div class="container">
+            <header>
+            <div class="profile">
+                <img class="profile" src="foto de perfil.jpg" alt="Perfil">
+        </div>
+        <div class="arroba">
+            <p class="hashtag">Victhor Alexandre</p>
+        </div>
+            </header>
+            <main>
+                <ul class="menu_lista">
+                    <li class="links_pessoais">
+                        <a href="">Meu perfil</a>
+                    </li>
+                    <li class="links_pessoais">
+                        <a href="">habilidade</a>
+                    </li>
+                    <li class="links_pessoais">
+                        <a href="">Meus projetos</a>
+                    </li>
+                    <li class="links_pessoais">
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <div class="lista_social">
+                    <a href="https://github.com/R.E.A.D" target="_blank"><img src="github.png" alt="GitHub" class="social_icon" width="26">
+                    </a>
+                    <a href="https://www.instagram.com/victhoralexandre81/" target="_blank"><img src="instagram.png" alt="Instagram" class="icone" width="26">
+                    </a>
+                    <a href="https://www.linkedin.com/in/victhoralexandre81/" target="_blank"><img src="linkedin.png" alt="LinkedIn" class="icone" width="26"></a>
+                </div>
+                <p class="foot_line">
+                    "Feito por:"
+                    <span class="foot_span">Victhor Alexandre</span>
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+<style>
+div.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+img.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #07f3ff;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(2, 223, 252, 0.3);
+}
+p.hashtag {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.lista_social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span.foot_line {
+    display: block;
+    font-size: 14px;
+    padding: 12px 0;
+    text-align: center;
+}
+.foot_line {
+    cursor: pointer;
+    text-decoration: underline;
+}
+* {
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.tudo {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li a {
+    backdrop-filter: blur(8px);
+    background-color: rgba(128, 0, 128, 0.709);
+    border: solid 1px blue;
+    border-radius: 8px;
+    color: var(--color);
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    margin: 0 0 8px;
+    padding: 12px;
+    width: 100%;
+    text-decoration: none;
+    transition: background 0.2s;
+    -webkit-backdrop-filter: blur(4px);
+}
+ul li {
+    display: block;
+}
+li {
+    display: list-item;
+    unicode-bidi: isolate;
+}
+main {
+    display: block;
+    unicode-bidi: isolate;
+}
+main {
+    padding: 12px 0;
+}
+.container {
+    width: 100%;
+    max-width: 588px;
+    margin: 0 auto;
+    padding: 20px;
+}
+body{
+    background: linear-gradient(to right,rgb(105, 0, 112),rgb(77, 0, 110),rgb(68, 1, 177),rgb(1, 40, 147));
+     background-blend-mode: multiply;
+
+}
+</style>
+</html>
